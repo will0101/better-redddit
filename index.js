@@ -1,5 +1,8 @@
 const needle = require('needle');
 exports.topPosts = (sub,cb) => {
+	if (!sub) {
+		var sub = "all";
+	}
 	var opt = { headers: {
 		"Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
 		"Accept-Encoding":"gzip, deflate, br",
@@ -21,6 +24,10 @@ exports.topPosts = (sub,cb) => {
 }
 
 exports.getPost = (post,cb) => {
+	if (!post) {
+		console.error("post param required");
+		return false;
+	}
 	var opt = { headers: {
 		"Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
 		"Accept-Encoding":"gzip, deflate, br",
