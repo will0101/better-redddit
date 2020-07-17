@@ -1,6 +1,6 @@
 {
   "name": "redddit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "reddit api without any authentication!",
   "main": "index.js",
   "scripts": {
@@ -22,5 +22,6 @@
   "homepage": "https://github.com/n0rmancodes/redddit#readme",
   "dependencies": {
     "needle": "^2.5.0"
-  }
+  },
+  "devDependencies": {}
 }
