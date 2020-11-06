@@ -25,8 +25,13 @@ exports.topPosts = (sub,cb) => {
 
 exports.getPost = (post,cb) => {
 	if (!post) {
-		console.error("post param required");
-		return false;
+		var err = {
+			"err": {
+				"message": "Post parameter required.",
+				"code": "noParam"
+			}
+		}
+		return cb(err, null);
 	}
 	var opt = { headers: {
 		"Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
@@ -53,8 +58,13 @@ exports.getPost = (post,cb) => {
 
 exports.search = (query,cb) => {
 	if (!query) {
-		console.error("query param required");
-		return false;
+		var err = {
+			"err": {
+				"message": "Query parameter required.",
+				"code": "noParam"
+			}
+		}
+		return cb(err, null);
 	}
 	var opt = { headers: {
 		"Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",

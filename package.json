@@ -1,6 +1,6 @@
 {
   "name": "redddit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "reddit api without any authentication!",
   "main": "index.js",
   "scripts": {
