@@ -1,6 +1,6 @@
 {
   "name": "redddit",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "reddit api without any authentication!",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "api"
   ],
   "author": "n0rmancodes",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/n0rmancodes/redddit/issues"
   },
