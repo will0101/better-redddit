@@ -1,5 +1,5 @@
 # redddit
-Simple Reddit API, no authentication needed!
+Simple Reddit API, no authentication needed! All credits go to normanlol for the original code, I just changed it to promises and used a different web scraper
 
 ## sample code
 
