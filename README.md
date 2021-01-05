@@ -1,7 +1,7 @@
-# redddit
+# better-redddit
 Simple Reddit API, no authentication needed! All credits go to normanlol for the original code, I just changed it to promises and used a different web scraper. Link to original https://github.com/normanlol/redddit and npm https://www.npmjs.com/package/redddit
 
-## sample code
+## example code
 
 ```js
 const r = require('better-redddit');
