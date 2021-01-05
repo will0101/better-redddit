@@ -2,7 +2,7 @@
   "name": "redddit",
   "version": "1.1.0",
   "description": "reddit api without any authentication!",
-  "main": "index.js",
+  "main": "test.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/n0rmancodes/redddit#readme",
   "dependencies": {
-    "needle": "^2.5.0"
+    "axios": "^0.21.1"
   },
   "devDependencies": {}
 }
