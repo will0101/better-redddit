@@ -33,17 +33,18 @@ async function search(query, limit){
 	if(!res)return null;
 	return res.data.data.children;
 }
-// async function get_url(search_url, param){
-// 	if(!search_url)return null;
-// 	const url = `${search_url}.json${param}`; // https://reddit.com
-// 	console.log(url);
-// 	const res = await axios({url: url, method: 'get', opt});
-// 	if(!res)return null;
-// 	return res.data.data.children;
-// }
+async function get_url(search_url){
+	if(!search_url)return null;
+	const url = `https://reddit.com/${search_url}.json`;
+	console.log(url);
+	const res = await axios({url: url, method: 'get', opt});
+	if(!res)return null;
+	console.log(res);
+	return res.data[0].data.children.data;
+}
 module.exports = {
 	top_posts,
 	get_post,
 	search,
-	//get_url
+	get_url
 }

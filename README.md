@@ -17,4 +17,8 @@ r.top_posts("memes", 10).then(results => {
 r.search('memes', 10).then(results => {
 	console.log(results);
 });
+
+r.get_url('r/PewdiepieSubmissions/comments/kseegx/im_bad_at_titles/').then(result => {
+	console.log(result);
+});
 ```
